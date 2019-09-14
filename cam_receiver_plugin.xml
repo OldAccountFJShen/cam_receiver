@@ -1,0 +1,7 @@
+<library path="lib/libcam_receiver">
+    <class name="cam_receiver/Drain" type="CamReceiver::Drain" base_class_type="nodelet::Nodelet">
+        <description>
+            This is my Drain nodelet.
+        </description>
+    </class>
+</library>
