@@ -148,7 +148,8 @@ namespace CamReceiver {
         unsigned long tot1 = depth_counter.getCount();
         unsigned long tot2 = rgb_counter.getCount();
 
-        NODELET_INFO("depth loss:total = %li:%lu\nrgb loss:total = %li:%lu", loss1, tot1, loss2, tot2);
+        NODELET_INFO("depth loss:total = %li:%lu", loss1, tot1);
+	NODELET_INFO("rgb loss:total = %li:%lu", loss2, tot2);
         NODELET_INFO("Drain destructed");
     }
 

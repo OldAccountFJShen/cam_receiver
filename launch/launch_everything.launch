@@ -1,6 +1,8 @@
 <launch>
 <env name="ROSCONSOLE_CONFIG_FILE" value="$(find cam_receiver)/custom_rosconfig.config"/>
 
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+
   <node pkg="nodelet" type="nodelet" name="drain"
 	args="load cam_receiver/Drain camera/realsense2_camera_manager">
 
@@ -10,5 +12,5 @@
 	
   </node>
 
-
+  <param name="/camera/realsense2_camera/align_depth" type="bool" value="true" />
 </launch>
